@@ -6,7 +6,7 @@ env:
   TEST_NAME: "From Minsk"
 jobs:
   test:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: First test
         run: "echo Hello world ${{ env.TEST_NAME }}"
