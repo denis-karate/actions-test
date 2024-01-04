@@ -1,6 +1,7 @@
 name: "My first Action"
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
 env:
   TEST_NAME = "From Minsk"
 jobs:
