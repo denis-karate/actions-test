@@ -3,7 +3,7 @@ name: "My first Action"
 on: 
   workflow_dispatch:
 env:
-  TEST_NAME = "From Minsk"
+  TEST_NAME: "From Minsk"
 jobs:
   test:
     runs-on: ubuntu
