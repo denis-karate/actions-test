@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: First test
-        run: "echo Hello world ${{ toJSON(github) }}"
+        run: "{{ toJSON(github) }}"
         
         
   
