@@ -11,7 +11,7 @@ jobs:
       - name: First test
         run: echo $JSON | jq
     env:
-      JSON: ${{ toJSON(github) }}
+      JSON: ${{ toJSON(github.event) }}
         
         
   
