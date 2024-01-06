@@ -7,14 +7,25 @@ on:
     
 env:
   TEST_NAME: "From Minsk"
+    
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: First test
+      - name: Output commands
         run: echo $JSON | jq
     env:
       JSON: ${{ toJSON(github.event) }}
+  artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy code
+        uses: actions/checkout@v3
+      - name: Upload Arctifact
+        uses: action/upload-artifact@v3
+        with:
+          name: file-artifact
+          path: 1.txt
         
         
   
