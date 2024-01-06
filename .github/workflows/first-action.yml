@@ -22,7 +22,7 @@ jobs:
       - name: Copy code
         uses: actions/checkout@v3
       - name: Upload Arctifact
-        uses: action/upload-artifact@v3
+        uses: action/upload-artifact@v4
         with:
           name: file-artifact
           path: 1.txt
