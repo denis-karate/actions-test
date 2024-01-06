@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Copy code
         uses: actions/checkout@v3
+      - name: Print file
+        run : cat 1.txt
       - name: Upload Arctifact
         uses: action/upload-artifact@v4
         with:
