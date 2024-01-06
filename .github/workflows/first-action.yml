@@ -25,7 +25,7 @@ jobs:
         uses: action/upload-artifact@v4
         with:
           name: file-artifact
-          path: 1.txt
+          path: ./1.txt
         
         
   
