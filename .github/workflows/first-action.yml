@@ -22,7 +22,7 @@ jobs:
       - name: Copy code
         uses: actions/checkout@v3
       - name: Print file
-        working-directory: /
+        working-directory: ./
         run : cat 1.txt
       - name: Upload Arctifact
         uses: action/upload-artifact@v4
