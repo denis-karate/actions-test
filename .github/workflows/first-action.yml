@@ -32,7 +32,7 @@ jobs:
         uses: action/upload-artifact@v4
         with:
           name: file-artifact
-          path: 2.txt
+          path: test/2.txt
 
         
         
