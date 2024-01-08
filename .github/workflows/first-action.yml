@@ -27,7 +27,11 @@ jobs:
       - name: Print file
         #working-directory: /test
         run: cat test/2.txt
-
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: test
+          name: Upload-Artifact
 
         
         
