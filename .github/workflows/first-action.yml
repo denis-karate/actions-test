@@ -1,6 +1,7 @@
 name: "My first Action"
 
-on: 
+on:
+  push: main 
   workflow_dispatch:
   pull_request:
     types: opened
@@ -22,13 +23,14 @@ jobs:
       - name: Copy code
         uses: actions/checkout@v3
       - name: Print file
-        working-directory: .
-        run : cat 1.txt
+        working-directory: /test
+        run : cat 2.txt
       - name: Upload Arctifact
+        working-directory: /test
         uses: action/upload-artifact@v4
         with:
           name: file-artifact
-          path: 1.txt
+          path: 2.txt
 
         
         
