@@ -1,7 +1,9 @@
 name: "My first Action"
 
 on:
-  push: main 
+  push:
+    branches:
+      - main 
   workflow_dispatch:
   pull_request:
     types: opened
