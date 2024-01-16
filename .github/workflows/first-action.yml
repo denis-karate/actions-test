@@ -1,4 +1,4 @@
-name: "My first Action"
+rname: "My first Action"
 
 on:
   workflow_dispatch:
@@ -47,7 +47,7 @@ jobs:
         with:
           serverUrl: http://5.tcp.eu.ngrok.io:11905
           username: admin
-          password: ${{ NEXUS_PASSWORD }}
+          password: ${{ secrets.NEXUS_PASSWORD }}
           format: maven2
           repository: my-first-nexus-repo
           coordinates: groupId=com.example artifactId=app version=1.0.0
