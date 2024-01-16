@@ -1,4 +1,4 @@
-rname: "My first Action"
+name: "My first Action"
 
 on:
   workflow_dispatch:
