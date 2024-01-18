@@ -28,7 +28,7 @@ jobs:
           username: karate
           password: ${{ secrets.NEXUS_PASSWORD }}
           format: maven2
-          repository: karate-repo
+          repository: maven-releases
           coordinates: groupId=file artifactId=app version=1.0.0
           assets: extension=jar
           filename: java-app-1.0-SNAPSHOT.jar
