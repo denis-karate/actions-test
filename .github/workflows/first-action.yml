@@ -16,22 +16,7 @@ jobs:
     env:
       JSON: ${{ toJSON(github.event) }}
 
-  #nexus:
-    runs-on: ubuntu-latest 
-    steps:
-      - name: copy code
-        uses: actions/checkout@v3
-      - name: Nexus Repo Publish
-        uses: sonatype-nexus-community/nexus-repo-github-action@master
-        with:
-          serverUrl: http:////0.tcp.eu.ngrok.io:15138
-          username: karate
-          password: ${{ secrets.NEXUS_PASSWORD }}
-          format: maven2
-          repository: maven-releases
-          coordinates: groupId=file artifactId=app2 version=2.0.0
-          assets: extension=jar
-          filename: java-app-1.0-SNAPSHOT.jar
+  
        
   build:
     name: Build
